@@ -1,0 +1,7 @@
+{
+  "name": "quaent-api",
+  "description": "Synthesis of quality content resources",
+  "repository": "https://github.com/prasanjitmohanty/quaent-api",
+  "keywords": ["node", "express", "heroku"],
+  "image": "heroku/nodejs"
+}

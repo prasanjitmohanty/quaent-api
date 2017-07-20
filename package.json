@@ -1,5 +1,5 @@
 {
-  "name": "sqcr",
+  "name": "quaent-api",
   "version": "1.0.0",
   "description": "Synthesis of quality content resources",
   "main": "index.js",
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/prasanjitmohanty/sqcr.git"
+    "url": "git+https://github.com/prasanjitmohanty/quaent-api"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/prasanjitmohanty/sqcr/issues"
+    "url": "https://github.com/prasanjitmohanty/quaent-api/issues"
   },
-  "homepage": "https://github.com/prasanjitmohanty/sqcr#readme",
+  "homepage": "https://github.com/prasanjitmohanty/quaent-api#readme",
   "dependencies": {
     "async": "2.5.0",
     "cheerio": "1.0.0-rc.2",
