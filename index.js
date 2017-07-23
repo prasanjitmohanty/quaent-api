@@ -18,6 +18,7 @@
       const searchText = req.params['searchText'];
       console.log(searchText);
       searchFacade.search(searchText).then((data)=>{
+        console.log('Success...');
          res.json(data);
       });
       // Hard coding for simplicity. Pretend this hits a real database
