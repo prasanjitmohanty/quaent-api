@@ -1,8 +1,8 @@
 
-// const searchFacade = require('./lib/search-facade');
-//  searchFacade.search('state of art of chatbots').then((reults)=>{
-//     console.log(reults);
-//  })
+const searchFacade = require('./lib/search-facade');
+ searchFacade.search('state of art of chatbots').then((reults)=>{
+    //console.log(reults);
+ })
 //http://www.theguardian.com/technology/2016/apr/06/what-is-chat-bot-kik-bot-shop-messaging-platform
 // const searchFacade = require('./lib/web-matadata-helper');
 // searchFacade.getMetaData('http://www.theguardian.com/technology/2016/apr/06/what-is-chat-bot-kik-bot-shop-messaging-platform',function(err,metadata){
@@ -19,11 +19,11 @@
 //     console.log(metadata);
 // })
 
-const searchFacade = require('./lib/redability-score');
-searchFacade.getScore('http://google.com',function(err,metadata){
-    console.log(err)
-    console.log(metadata);
-})
+// const searchFacade = require('./lib/redability-score');
+// searchFacade.getScore('http://google.com',function(err,metadata){
+//     console.log(err)
+//     console.log(metadata);
+// })
 //const redability = require('readability-checker');
 //console.log(redability)
 // var cmd=require('node-cmd');
