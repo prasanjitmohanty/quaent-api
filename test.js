@@ -1,8 +1,8 @@
 
-const searchFacade = require('./lib/search-facade');
- searchFacade.search('node.js').then((reults)=>{
-    console.log(reults);
- })
+// const searchFacade = require('./lib/search-facade');
+//  searchFacade.search('state of art of chatbots').then((reults)=>{
+//     console.log(reults);
+//  })
 //http://www.theguardian.com/technology/2016/apr/06/what-is-chat-bot-kik-bot-shop-messaging-platform
 // const searchFacade = require('./lib/web-matadata-helper');
 // searchFacade.getMetaData('http://www.theguardian.com/technology/2016/apr/06/what-is-chat-bot-kik-bot-shop-messaging-platform',function(err,metadata){
@@ -18,6 +18,36 @@ const searchFacade = require('./lib/search-facade');
 // searchFacade.getShareCount('http://www.theguardian.com/technology/2016/apr/06/what-is-chat-bot-kik-bot-shop-messaging-platform',function(err,metadata){
 //     console.log(metadata);
 // })
+
+const searchFacade = require('./lib/redability-score');
+searchFacade.getScore('http://google.com',function(err,metadata){
+    console.log(err)
+    console.log(metadata);
+})
+//const redability = require('readability-checker');
+//console.log(redability)
+// var cmd=require('node-cmd');
+// var nrc = require('node-run-cmd');
+// //cmd.run('node_modules\.bin\readability http://www.heydonworks.com');
+// var dataCallback = function(data) {
+//   console.log(data);
+// };
+
+ 
+//node node_modules\readability-checker\lib\readability.js
+//nrc.run('node test1.js', { onData: dataCallback });
+// cmd.get(
+    
+//         'node node_modules/readability-checker/lib/readability.js http://www.heydonworks.com',
+//         function(err, data, stderr){
+//             let score = data.split('\n')[3].split(':')[1].split('/')[0];
+//             console.log('the current dir contains these files :\n\n',score)
+//         }
+//     );
+//  if (shell.exec('git commit -am "Auto-commit"').code !== 0) {
+//   shell.echo('Error: Git commit failed');
+//   shell.exit(1);
+// }
 
 // const urlMetadata = {
 //     author: 'Erwin Van Lun',
