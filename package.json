@@ -29,7 +29,6 @@
     "node-cmd": "3.0.0",
     "readability-checker": "0.2.1",
     "request-promise-native": "1.0.4",
-    "sociare-counter": "0.2.0",
-    "webdriverio": "^4.8.0"
+    "sociare-counter": "0.2.0"
   }
 }
