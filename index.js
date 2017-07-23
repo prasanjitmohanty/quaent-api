@@ -27,10 +27,6 @@ app.get('/search/:searchText', function (req, res) {
 
 app.listen(app.get('port'), function () {
   console.log("Node app is running at localhost:" + app.get('port'));
-  var http = require("http");
-  setInterval(function () {
-    http.get("https://hidden-spire-31316.herokuapp.com");
-  }, 300000);
 });
 
 
