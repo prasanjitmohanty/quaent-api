@@ -8,6 +8,7 @@ const app = express();
 app.use(cors());
 
 app.set('port', (process.env.PORT || 5000));
+app.timeout = 240000;
 
 app.get('/', function (request, response) {
   response.send('Hello QUAENT!')
