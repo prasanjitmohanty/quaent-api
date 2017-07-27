@@ -22,6 +22,7 @@
   "homepage": "https://github.com/prasanjitmohanty/quaent-api#readme",
   "dependencies": {
     "async": "2.5.0",
+    "cheerio": "1.0.0-rc.2",
     "cors": "2.8.3",
     "express": "4.15.3",
     "google-search-scraper": "0.0.3",
@@ -29,7 +30,6 @@
     "node-cmd": "3.0.0",
     "readability-checker": "0.2.1",
     "request-promise-native": "1.0.4",
-    "sociare-counter": "0.2.0",
-    "whacko": "0.19.1"
+    "sociare-counter": "0.2.0"
   }
 }
