@@ -18,7 +18,7 @@ app.get('/search/:searchText', function (req, res) {
   //const searchText = 'What are the upcoming trends on chatbots?';
   const searchText = req.params['searchText'];
   console.log(searchText);
-  searchFacade.search(searchText).then((data) => {
+  searchFacade.search(searchText,(data) => {
     console.log('Success...');
     res.json(data);
   });
