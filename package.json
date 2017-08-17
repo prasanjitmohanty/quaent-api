@@ -30,6 +30,7 @@
     "google-search-scraper": "0.0.3",
     "metascraper": "1.0.7",
     "request-promise-native": "1.0.4",
+    "social-counter": "1.0.0",
     "sociare-counter": "0.2.0",
     "text-stats": "0.0.3"
   }

@@ -1,8 +1,8 @@
 
-const searchFacade = require('./lib/search-facade');
- searchFacade.search('state of art of chatbots').then((reults)=>{
-    //console.log(reults);
- })
+// const searchFacade = require('./lib/search-facade');
+//  searchFacade.search('state of art of chatbots').then((reults)=>{
+//     //console.log(reults);
+//  })
 //http://www.theguardian.com/technology/2016/apr/06/what-is-chat-bot-kik-bot-shop-messaging-platform
 // const searchFacade = require('./lib/web-matadata-helper');
 // searchFacade.getMetaData('http://www.theguardian.com/technology/2016/apr/06/what-is-chat-bot-kik-bot-shop-messaging-platform',function(err,metadata){
@@ -64,4 +64,42 @@ const searchFacade = require('./lib/search-facade');
 // searchFacade.getScore(urlMetadata, function (err, score) {
 //     console.log(score);
 // })
+
+ const twitterCount = require('./lib/social-followers-count');
+ const urlMetadata = {
+        "author": "Laura Parker",
+        "date": "2010-09-24T06:56:00.000Z",
+        "description": "We take a look at the future of gaming in three parts: 3D, Social Gaming, and DLC.",
+        "image": "https://static.gamespot.com/uploads/screen_kubrick/mig/2/9/4/7/2302947-gamingfuture3d_embed001.jpg",
+        "publisher": "GameSpot",
+        "title": "The Future of Gaming: 3D",
+        "url": "https://www.gamespot.com/articles/the-future-of-gaming-3d/1100-6274271/",
+        "meta": {
+            "description": "We take a look at the future of gaming in three parts: 3D, Social Gaming, and DLC.",
+            "X-UA-Compatible": "IE=edge,chrome=1",
+            "application-name": "GameSpot",
+            "msapplication-TileColor": "#26292B",
+            "msapplication-TileImage": "https://static.gamespot.com/bundles/gamespotsite/images/win8pin.png",
+            "userAuthState": "noUser",
+            "modal-cdn-url": "/js/modals.json",
+            "js-sort-filter-text": "yes",
+            "viewport": "width=device-width, initial-scale=1.0",
+            "username": "GS|Anonymous",
+            "twitter:card": "summary_large_image",
+            "twitter:site": "@GameSpot",
+            "twitter:creator": "@imprasanjit",
+            "og:image": "https://static.gamespot.com/uploads/screen_kubrick/mig/2/9/4/7/2302947-gamingfuture3d_embed001.jpg",
+            "og:title": "The Future of Gaming: 3D",
+            "og:description": "We take a look at the future of gaming in three parts: 3D, Social Gaming, and DLC.",
+            "og:site_name": "GameSpot",
+            "og:type": "article",
+            "og:url": "https://www.gamespot.com/articles/the-future-of-gaming-3d/1100-6274271/",
+            "guid": "1100-6274271",
+            "kCode": "/contra/cheats/"
+        }
+    };
+
+    twitterCount.getFollowersCount(urlMetadata,(err, resultsData)=>{
+        console.log('followers Count: '+ resultsData);
+    });
 
